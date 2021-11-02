@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+import styled from 'styled-components';
 import Header from './Header'
 import Footer from './Footer'
 import Button from './Button'
@@ -74,8 +74,16 @@ const App= () => {
     links: ["About", "Careers", "Pricing", "Feedback", "Roadmap"]
   }
 
+  const MainContainer = styled.div`
+    text-align: center;
+    width: 100%;
+    height: auto;
+    color: black;
+    background-color: white;
+`
+
   return (
-    <div className="main-container">
+    <MainContainer>
       <Header title={title.headerTitle} backgroundColor={title.headerBackgroundColor}/>
       <ProfileImage image={profileImage.image} name={profileImage.name} textColor={profileImage.textColor}/>
       <Loader color={loader.color} size={loader.size} loading={loading} setLoading={setLoading}/>
@@ -86,7 +94,7 @@ const App= () => {
       <Card title={card.title} image={card.image} date={card.date} number={card.number}/>
       <CookieAlert text={cookieAlert.text} textColor={cookieAlert.textColor} backgroundColor={cookieAlert.backgroundColor}/>
       <Footer color={footer.color} links={footer.links}/>
-    </div>
+    </MainContainer>
   );
 }
 
