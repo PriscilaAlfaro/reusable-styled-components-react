@@ -1,6 +1,6 @@
 # Week-12
 
-# Labs: reusable components with `styled components library`
+# Labs: reusable components with Styled Components Library
 This week you'll build the same reusable components as last week. BUT this time you should build them with [Styled Components](https://styled-components.com/docs/basics). 
 
 ```
